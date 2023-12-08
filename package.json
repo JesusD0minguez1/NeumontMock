@@ -1,0 +1,21 @@
+{
+  "name": "neumontmock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass main.scss style.css",
+    "compile:sass2": "node-sass student.scss style2.css",
+    "compile:sass3": "node-sass academic.scss style3.css",
+    "compile:sass4": "node-sass admissions.scss style4.css"
+
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

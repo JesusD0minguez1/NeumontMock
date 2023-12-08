@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neumont</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <img src="./Neumont.png" class="img-logo"/>
+                <a href="#" id="admissionsLink" onclick="switchPage('admissions')" class="links">Admissions</a>
+                <a href="#" id="academicsLink" onclick="switchPage('academics')" class="links">Academics</a>
+                <a href="#" id="studentlifeLink" onclick="switchPage('studentlife')" class="links">Student Life</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-body">
+        <div class="typed-container">
+            <h1 id="typed-output"></h1>
+        </div>
+        <a href="#" class="apply">Apply Now</a>
+    </div>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature">
+                <h2>THE NEUMONT DIFFERENCE</h2>
+                <span id="difference"></span>
+            </div>
+            <div class="feature">
+                <h2>Come vist</h2>
+                <span id="visit"></span>
+            </div>
+            <div class="feature">
+                <h2>Student life</h2>
+                <span id="student"></span>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Neumont College of Computer Science</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

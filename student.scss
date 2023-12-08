@@ -1,0 +1,104 @@
+$isDarkTheme: true; 
+
+@mixin container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body, h1, p, a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+  @if $isDarkTheme {
+    background-color: #1F1F1F;
+    color: white;
+  } @else {
+    background-color: #FFFFFF;
+    color: #333333;
+  }
+}
+
+header {
+  background-color: #1F1F1F;
+  color: white;
+
+  @include container;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  height: 100px;
+}
+
+.img-logo {
+  height: 100px;
+  width: auto;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.student {
+  @if $isDarkTheme{
+    background-color: #1F1F1F;
+    color: white;
+    padding: 50px 0;
+  }@else{
+    background-color: #EFEFEF;
+    color: #333333;
+    padding: 50px 0;
+  }
+  
+  @include container;
+
+  img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .student-details {
+    .student {
+      margin-bottom: 20px;
+
+      h2 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #555;
+      }
+    }
+  }
+}
+
+footer {
+  @include container;
+
+  @if $isDarkTheme {
+    background-color: #1F1F1F;
+    color: white;
+  } @else {
+    background-color: #FFFFFF;
+    color: #333333;
+  }
+
+  padding: 20px 0;
+}

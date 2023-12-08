@@ -1,0 +1,92 @@
+body, h1, p, a {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1F1F1F;
+  color: white; }
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+header {
+  background-color: #1F1F1F;
+  color: white; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  height: 100px; }
+
+.img-logo {
+  height: 100px;
+  width: 100%;
+  align-self: flex-start;
+  margin-right: 300px; }
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold; }
+
+.links {
+  margin-top: 50px;
+  font-size: 15px; }
+
+.container-body {
+  background-image: url("./admissions.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+  width: 100%;
+  height: 400px; }
+
+.ad-container {
+  text-align: center;
+  margin-bottom: 50px; }
+
+#ad-output {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  color: #F4DC19; }
+
+.apply {
+  background-color: #d3ba02;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold; }
+
+.features {
+  background-color: #1F1F1F;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between; }
+
+.feature {
+  width: 30%;
+  padding: 20px;
+  background-color: #F4DC19;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px; }
+
+footer {
+  background-color: #1F1F1F;
+  color: white;
+  color: white;
+  text-align: center;
+  padding: 20px 0; }
